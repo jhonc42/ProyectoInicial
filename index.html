@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Básico</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="plugins/flexdatalist/jquery.flexdatalist.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Proyecto inicial</h1>
+        <hr>
+        <input type='text' placeholder='Programming language name' class='flexdatalist form-control' data-min-length='1' list='languages' name='language'>
+
+        <datalist id="languages">
+            <option value="PHP">PHP</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Cobol">Cobol</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Pascal">Pascal</option>
+            <option value="FORTRAN">FORTRAN</option>
+            <option value="Lisp">Lisp</option>
+            <option value="Swift">Swift</option>
+        </datalist>
+        <input type='text' placeholder='Ciudades' class='flexdatalist form-control' data-min-length='1' list='ciudadesList' name='txtCiudades' id="txtCiudades" data-value-property="value">
+
+        <datalist id="ciudadesList">
+            <option value="1">Bogotá</option>
+            <option value="2">Medellín</option>
+            <option value="3">Pasto</option>
+        </datalist>
+        <br>
+        <hr>
+        <input type='text' class='flexdatalist form-control' data-data="data/paises.json" data-search-in="name" data-min-length='1'>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="plugins/flexdatalist/jquery.flexdatalist.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
